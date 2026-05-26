@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>企业卡业务试算</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    background: #f3f4f6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #111827;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    padding: 56px;
+    border-radius: 8px;
+    margin-bottom: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 0 0 16px;
+}
+
+.hero p {
+    font-size: 17px;
+    opacity: 0.95;
+}
+
+.section-block {
+    background: white;
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.section-title {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: #0f172a;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 24px;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #111827;
+}
+
+.value {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1d4ed8;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.table-wrap::-webkit-scrollbar {
+    height: 10px;
+}
+
+.table-wrap::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+}
+
+.revenue-table {
+    min-width: 2300px;
+}
+
+.table-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #0f172a;
+    color: white;
+    padding: 14px 12px;
+    text-align: left;
+    font-size: 13px;
+    position: sticky;
+    top: 0;
+}
+
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+tr:hover td {
+    background: #f8fafc;
+}
+
+.highlight {
+    font-weight: 700;
+    color: #1d4ed8;
+}
+
+.footer {
+    font-size: 14px;
+    color: #374151;
+}
+
+@media print {
+    body { padding: 0; background: white; }
+    .card, table, .hero { box-shadow: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="container" id="documentRoot">
+
+<div class="container">
+<div class="hero">
+<h1 data-editable="true">企业卡业务试算</h1>
+<p data-editable="true">面向日本市场的企业卡发卡、跨境收单、预付卡以及退税业务的三年财务试算模型。</p>
+<p data-editable="true"><strong>业务推进计划：</strong><br>2026年：优先开发与上线「跨境广告投流卡」业务。<br>2027年：上线企业采购卡、留学生/外劳卡、退税卡业务。<br>2028年：进一步扩展礼品卡与预付卡业务。</p>
+</div>
+</div>
+
+<div class="section-block">
+<h2 class="section-title" data-editable="true">业务模式说明</h2>
+<div class="grid">
+<div class="card">
+<h3 data-editable="true">企业采购卡</h3>
+<p data-editable="true">给在日本出店和经营的企业发卡，让企业可以使用在日本的收入直接向中国供应商采购。</p>
+<p data-editable="true">主要收入来源包括：</p>
+<p data-editable="true">- IRF（Interchange Revenue Fee）<br>- 跨境外汇手续费</p>
+</div>
+<div class="card">
+<h3 data-editable="true">跨境广告投流卡</h3>
+<p data-editable="true">用于给在日本EC出店的企业支付日本平台使用费、广告费、投流费。</p>
+<p data-editable="true">适用于Amazon、Rakuten、Google、Meta、TikTok等平台相关支出。</p>
+<p data-editable="true">主要收入来源包括：<br>- IRF（Interchange Revenue Fee）<br>- 充值手续费</p>
+</div>
+<div class="card">
+<h3 data-editable="true">留学生 / 外劳卡</h3>
+<p data-editable="true">针对日本留学生、技能实习生及外劳人群提供工资卡、生活支付卡以及跨境汇款服务。</p>
+<p data-editable="true">收入来源包括：学费、公寓费、通讯费、日常消费等场景中的卡消费收入。</p>
+</div>
+</div>
+</div>
+
+<div class="section-block">
+<h2 class="section-title" data-editable="true">收入试算</h2>
+<div class="table-wrap"><table class="revenue-table">
+<tr>
+<th>业务类型</th>
+<th>目标客户</th>
+<th>核心用途</th>
+<th>TAM</th>
+<th>SAM</th>
+<th>获客来源</th>
+<th>2027 SOM</th>
+<th>2028 SOM</th>
+<th>2029 SOM</th>
+<th>活跃客户数</th>
+<th>单客户年GMV</th>
+<th>2027 GMV</th>
+<th>2028 GMV</th>
+<th>2029 GMV</th>
+<th>收入来源</th>
+<th>收入率</th>
+<th>直接成本率</th>
+<th>毛利率</th>
+</tr>
+
+<tr>
+<td data-editable="true"><strong>企业采购卡</strong></td>
+<td data-editable="true">日本华人贸易商 / EC卖家 / 中国采购企业</td>
+<td data-editable="true">使用日本营业收入<br>向中国供应商采购</td>
+<td data-editable="true">1100万亿日元</td>
+<td data-editable="true">5000亿~2万亿日元</td>
+<td data-editable="true">合作渠道导流</td>
+<td data-editable="true">固定导流</td>
+<td data-editable="true">固定导流</td>
+<td data-editable="true">固定导流</td>
+<td data-editable="true">约30~50社</td>
+<td data-editable="true">约1.1亿日元</td>
+<td data-editable="true">约95亿日元（按5000万人民币/月测算）</td>
+<td data-editable="true">约190亿日元</td>
+<td data-editable="true">约285亿日元</td>
+<td data-editable="true">IRF + 外汇手续费</td>
+<td data-editable="true">2.50%</td>
+<td data-editable="true">0.30%</td>
+<td class="highlight" data-editable="true">2.20%</td>
+</tr>
+
+<tr>
+<td data-editable="true"><strong>跨境广告投流卡</strong></td>
+<td data-editable="true">日本跨境EC卖家</td>
+<td data-editable="true">广告费 / 平台费<br>/ 投流</td>
+<td data-editable="true">1.5~2万亿日元</td>
+<td data-editable="true">2000~3000亿日元</td>
+<td data-editable="true">EC服务商合作</td>
+<td data-editable="true">固定导流</td>
+<td data-editable="true">固定导流</td>
+<td data-editable="true">固定导流</td>
+<td data-editable="true">EC服务商合作</td>
+<td data-editable="true">每天30万USD广告投流</td>
+<td data-editable="true">约160亿日元</td>
+<td data-editable="true">约320亿日元</td>
+<td data-editable="true">约480亿日元</td>
+<td data-editable="true">IRF + 充值手续费</td>
+<td data-editable="true">1.50%</td>
+<td data-editable="true">0.30%</td>
+<td class="highlight" data-editable="true">1.20%</td>
+</tr>
+
+
+
+<tr>
+<td data-editable="true"><strong>退税卡</strong></td>
+<td data-editable="true">访日游客 / 退税运营商</td>
+<td data-editable="true">退税返还<br>与消费</td>
+<td data-editable="true">7000~8000亿日元</td>
+<td data-editable="true">1000~2000亿日元</td>
+<td data-editable="true">退税运营合作</td>
+<td data-editable="true">1%</td>
+<td data-editable="true">3%</td>
+<td data-editable="true">5%</td>
+<td data-editable="true">约20万用户</td>
+<td data-editable="true">约5万日元</td>
+<td data-editable="true">10亿日元（约USD 670万）</td>
+<td data-editable="true">30亿日元（约USD 2,000万）</td>
+<td data-editable="true">50亿日元（约USD 3,400万）</td>
+<td data-editable="true">IRF + 运营手续费</td>
+<td data-editable="true">0.80%</td>
+<td data-editable="true">0.25%</td>
+<td class="highlight" data-editable="true">0.55%</td>
+</tr>
+
+<tr>
+<td data-editable="true"><strong>留学生 / 外劳卡</strong></td>
+<td data-editable="true">留学生 / 技能实习生 / 外劳</td>
+<td data-editable="true">学费 / 房租<br>/ 日常消费</td>
+<td data-editable="true">1.5万亿日元</td>
+<td data-editable="true">3000~5000亿日元</td>
+<td data-editable="true">学校 / 人材公司</td>
+<td data-editable="true">1%</td>
+<td data-editable="true">3%</td>
+<td data-editable="true">5%</td>
+<td data-editable="true">约5万用户</td>
+<td data-editable="true">约30万日元</td>
+<td data-editable="true">30亿日元（约USD 2,000万）</td>
+<td data-editable="true">90亿日元（约USD 6,000万）</td>
+<td data-editable="true">150亿日元（约USD 1.01亿）</td>
+<td data-editable="true">消费IRF</td>
+<td data-editable="true">1.20%</td>
+<td data-editable="true">0.35%</td>
+<td class="highlight" data-editable="true">0.85%</td>
+</tr>
+
+<tr>
+<td data-editable="true"><strong>礼品卡 / 预付卡</strong></td>
+<td data-editable="true">零售 / 企业福利 / IP联名</td>
+<td data-editable="true">预付消费<br>场景</td>
+<td data-editable="true">4~5万亿日元</td>
+<td data-editable="true">3000~5000亿日元</td>
+<td data-editable="true">零售渠道合作</td>
+<td data-editable="true">-</td>
+<td data-editable="true">3%</td>
+<td data-editable="true">5%</td>
+<td data-editable="true">约30万用户</td>
+<td data-editable="true">约5万日元</td>
+<td data-editable="true">-</td>
+<td data-editable="true">90亿日元（约USD 6,000万）</td>
+<td data-editable="true">150亿日元（约USD 1.01亿）</td>
+<td data-editable="true">IRF + 发卡手续费</td>
+<td data-editable="true">1.20%</td>
+<td data-editable="true">0.40%</td>
+<td class="highlight" data-editable="true">0.80%</td>
+</tr>
+
+</table></div>
+</div>
+
+<div class="section-block">
+<h2 class="section-title" data-editable="true">直接成本说明</h2>
+<div class="table-wrap"><table>
+<tr><th>成本项目</th><th>说明</th><th>估算方式</th></tr>
+<tr><td data-editable="true">卡组织费用</td><td data-editable="true">Visa / Mastercard Network Fee</td><td data-editable="true">按GMV比例计提</td></tr>
+<tr><td data-editable="true">Processor费用</td><td data-editable="true">发卡处理、清算、交易处理费用</td><td data-editable="true">按GMV比例计提</td></tr>
+<tr><td data-editable="true">风控 / 拒付准备金</td><td data-editable="true">Fraud、Chargeback、坏账准备</td><td data-editable="true">按GMV比例计提</td></tr>
+<tr><td data-editable="true">BIN Sponsor成本</td><td data-editable="true">BIN租赁与Sponsor Bank相关成本</td><td data-editable="true">已部分包含在Processor费用中</td></tr>
+</table></div>
+</div>
+
+<div class="section-block">
+<h2 class="section-title" data-editable="true">成本试算</h2>
+<div class="table-wrap"><table>
+<tr>
+<th>项目</th>
+<th>2027</th>
+<th>2028</th>
+<th>2029</th>
+<th>说明</th>
+</tr>
+
+<tr><td data-editable="true">CEO</td><td data-editable="true">840万日元</td><td data-editable="true">840万日元</td><td data-editable="true">840万日元</td><td data-editable="true">日本代表</td></tr>
+<tr><td data-editable="true">COO / CPO</td><td data-editable="true">840万日元</td><td data-editable="true">840万日元</td><td data-editable="true">840万日元</td><td data-editable="true">产品与运营负责人</td></tr>
+<tr><td data-editable="true">外部顾问（团队）费用</td><td data-editable="true">2000万日元</td><td data-editable="true">2000万日元</td><td data-editable="true">2000万日元</td><td data-editable="true">外部顾问、战略支持、行业资源协助</td></tr>
+<tr><td data-editable="true">产品 / 技术团队</td><td data-editable="true">1800万日元（2人）</td><td data-editable="true">4500万日元（5人）</td><td data-editable="true">4500万日元（5人）</td><td data-editable="true">2028增加3名SE</td></tr>
+<tr><td data-editable="true">运营团队</td><td data-editable="true">1200万日元（2人）</td><td data-editable="true">3000万日元（5人）</td><td data-editable="true">3000万日元（5人）</td><td data-editable="true">2028增加3名运维</td></tr>
+<tr><td data-editable="true">总务 / 财务 / 人事</td><td data-editable="true">600万日元（1人）</td><td data-editable="true">1800万日元（3人）</td><td data-editable="true">1800万日元（3人）</td><td data-editable="true">2028增加2名后台人员</td></tr>
+<tr><td data-editable="true">办公室</td><td data-editable="true">600万日元</td><td data-editable="true">960万日元</td><td data-editable="true">960万日元</td><td data-editable="true">团队扩大后办公室升级</td></tr>
+<tr><td data-editable="true">发卡系统</td><td data-editable="true">1200万日元</td><td data-editable="true">1800万日元</td><td data-editable="true">1800万日元</td><td data-editable="true">更多BIN与系统资源</td></tr>
+<tr><td data-editable="true">市场营销</td><td data-editable="true">1000万日元</td><td data-editable="true">1800万日元</td><td data-editable="true">1800万日元</td><td data-editable="true">业务扩张后增加市场预算</td></tr>
+<tr><td data-editable="true">系统开发费用</td><td data-editable="true">2500万日元（2026投入）</td><td data-editable="true">3000万日元</td><td data-editable="true">3000万日元</td><td data-editable="true">AI开发、功能扩展、系统维护</td></tr>
+<tr><td data-editable="true">外部服务 / 系统使用费</td><td data-editable="true">1000万日元</td><td data-editable="true">2000万日元</td><td data-editable="true">3000万日元</td><td data-editable="true">银行充值、打款、API使用费、外部SaaS等</td></tr>
+<tr><td data-editable="true"><strong>固定运营成本合计</strong></td><td data-editable="true"><strong>1.36亿日元</strong></td><td data-editable="true"><strong>2.25亿日元</strong></td><td data-editable="true"><strong>2.43亿日元</strong></td><td data-editable="true"><strong>2028后团队扩张</strong></td></tr>
+<tr><td data-editable="true"><strong>发卡系统初期费用（一次性）</strong></td><td data-editable="true"><strong>0.25亿日元（约USD 1,690万）</strong></td><td data-editable="true">-</td><td data-editable="true">-</td><td data-editable="true">2027年初期导入费用</td></tr>
+</table></div>
+</div>
+
+<div class="section-block">
+<h2 class="section-title" data-editable="true">利润试算</h2>
+<div class="table-wrap"><table>
+<tr><th>项目</th><th>2027</th><th>2028</th><th>2029</th></tr>
+<tr><td data-editable="true">营业收入</td><td data-editable="true">约6.2亿日元</td><td data-editable="true">约11.5亿日元</td><td data-editable="true">约16.8亿日元</td></tr>
+<tr><td data-editable="true">直接成本</td><td data-editable="true">约1.6亿日元</td><td data-editable="true">约3.0亿日元</td><td data-editable="true">约4.2亿日元</td></tr>
+<tr><td data-editable="true">毛利润</td><td data-editable="true">约4.6亿日元</td><td data-editable="true">约8.5亿日元</td><td data-editable="true">约12.6亿日元</td></tr>
+<tr><td data-editable="true">运营成本</td><td data-editable="true">1.61亿日元</td><td data-editable="true">2.25亿日元</td><td data-editable="true">2.43亿日元</td></tr>
+<tr><td data-editable="true"><strong>EBITDA</strong></td><td data-editable="true"><strong>约3.0亿日元</strong></td><td data-editable="true"><strong>约6.2亿日元</strong></td><td data-editable="true"><strong>约10.1亿日元</strong></td></tr>
+</table></div>
+</div>
+
+<div class="section-block">
+<h2 class="section-title" data-editable="true">直接成本率构成依据</h2>
+<div class="table-wrap"><table>
+<tr><th>成本项目</th><th>当前假设</th><th>行业常见范围</th><th>依据说明</th></tr>
+<tr><td data-editable="true">卡组织费用（Scheme Fee）</td><td data-editable="true">0.10% ~ 0.18%</td><td data-editable="true">0.08% ~ 0.25%</td><td data-editable="true">参考日本市场Visa / Mastercard Commercial Card、企业支付、跨境收单项目的Network Fee结构。不同MCC、卡种、跨境比例会影响成本。</td></tr>
+<tr><td data-editable="true">Processor费用</td><td data-editable="true">0.08% ~ 0.15%</td><td data-editable="true">0.05% ~ 0.20%</td><td data-editable="true">参考日本市场Processor、BIN Sponsor、Issuer Processor常见报价。大型交易量通常可进一步下降。</td></tr>
+<tr><td data-editable="true">风控 / Chargeback准备金</td><td data-editable="true">0.03% ~ 0.08%</td><td data-editable="true">0.02% ~ 0.15%</td><td data-editable="true">参考企业卡、跨境广告投流卡、预付卡业务中的Fraud Loss与Chargeback Reserve经验值。</td></tr>
+<tr><td data-editable="true">BIN Sponsor相关成本</td><td data-editable="true">部分计入Processor</td><td data-editable="true">固定费 + 交易费</td><td data-editable="true">部分Sponsor Bank会单独收费，也有包含在Processor报价中的情况。当前模型采用保守合并处理。</td></tr>
+<tr><td data-editable="true"><strong>合计直接成本率</strong></td><td data-editable="true"><strong>约0.30%</strong></td><td data-editable="true"><strong>0.20% ~ 0.45%</strong></td><td data-editable="true"><strong>采用偏保守中位数估算，适用于初期发卡规模。</strong></td></tr>
+</table></div>
+</div>
+
+<div class="section-block">
+<h2 class="section-title" data-editable="true">费率假设与行业参考说明</h2>
+<div class="table-wrap"><table>
+<tr><th>项目</th><th>当前假设</th><th>行业常见区间</th><th>说明</th></tr>
+<tr><td data-editable="true">企业采购卡收入率</td><td data-editable="true">2.50%</td><td data-editable="true">1.50% ~ 3.00%</td><td data-editable="true">包含企业采购卡MDR收入以及跨境人民币采购场景中的外汇手续费收入。由于目标场景为日本企业向中国采购，因此增加约1.5%的跨境换汇手续费。整体收入结构包括IRF收入以及跨境外汇手续费等。</td></tr>
+<tr><td data-editable="true">跨境广告投流卡收入率</td><td data-editable="true">1.50%</td><td data-editable="true">1.20% ~ 2.00%</td><td data-editable="true">参考日本跨境广告投流、海外平台支付、EC平台费用支付业务中的MDR结构。由于跨境、高频广告投流及平台费用支付场景，1.5%属于现实可实现区间。</td></tr>
+<tr><td data-editable="true">留学生 / 外劳卡收入率</td><td data-editable="true">1.20%</td><td data-editable="true">0.80% ~ 1.50%</td><td data-editable="true">参考日本留学生、技能实习生、外劳工资卡、生活支付卡业务中的MDR、FX及ATM相关收入结构。</td></tr>
+
+<tr><td data-editable="true">直接成本率</td><td data-editable="true">0.30%</td><td data-editable="true">0.20% ~ 0.45%</td><td data-editable="true">包含Visa/Mastercard Network Fee、Processor、BIN Sponsor、Fraud Reserve等。实际会因交易结构、地区、MCC、卡种而变化。</td></tr>
+</table></div>
+</div>
+
+<div class="section-block">
+<h2 class="section-title">补充说明</h2>
+<div class="footer">
+<p data-editable="true">说明：</p>
+<p data-editable="true">当前模型中的收入率与直接成本率，并非来自单一公开数据，而是基于日本支付行业经验、市场公开资料、以及日本发卡/收单业务的常见商业结构进行保守估算。</p>
+<p data-editable="true">- 收入率（Take Rate）主要参考企业卡、Commercial Card、跨境收单、稳定币支付业务中的净分润比例。其中企业采购卡场景额外考虑了中日跨境采购中的外汇手续费收入。</p>
+<p data-editable="true">- 直接成本主要包含卡组织费用（Visa/Mastercard）、Processor费用、BIN Sponsor费用、风控与拒付准备金等。</p>
+<p data-editable="true">- 当前采用的是偏保守的中位数估算，后续可以根据实际合作银行、Processor、卡组织条件进一步调整。</p>
+<p data-editable="true">- 若取得更好的BIN Sponsor条件、自建Processor、或稳定币结算占比提升，整体毛利率有进一步改善空间。</p>
+<p data-editable="true">本模型用于投资人沟通、银行合作讨论以及内部经营规划。后续还可以追加稳定币结算、虚拟卡、钱包服务等业务场景。</p>
+</div>
+</div>
+
+</div>
+</body>
+</html>
