@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Songti SC'; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 17.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="zh"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8" /&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span></p>
+<p class="p1"><span class="s1">&lt;title&gt;企业卡业务试算&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1">* {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-sizing: border-box;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: #f3f4f6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: #111827;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>line-height: 1.6;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>max-width: 1600px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin: 0 auto;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: linear-gradient(135deg, #0f172a, #1e3a8a);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 56px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin-bottom: 28px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow: 0 10px 30px rgba(0,0,0,0.12);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero h1 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size: 42px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin: 0 0 16px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.hero p {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size: 17px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>opacity: 0.95;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.section-block {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 32px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin-bottom: 28px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow: 0 4px 20px rgba(0,0,0,0.06);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.section-title {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size: 28px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin-top: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin-bottom: 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: #0f172a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-bottom: 2px solid #e5e7eb;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding-bottom: 12px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.grid {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display: grid;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>gap: 20px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.card {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: #f8fafc;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border: 1px solid #e5e7eb;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 24px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.card h3 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin-top: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size: 22px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: #111827;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.value {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size: 34px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: #1d4ed8;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.table-wrap {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>overflow-x: auto;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.table-wrap::-webkit-scrollbar {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>height: 10px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.table-wrap::-webkit-scrollbar-thumb {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: #cbd5e1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 999px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.revenue-table {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>min-width: 2300px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.table-wrap table {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-collapse: collapse;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: white;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">th {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: #0f172a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 14px 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>text-align: left;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size: 13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>position: sticky;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>top: 0;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">td {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 14px 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-bottom: 1px solid #e5e7eb;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>vertical-align: top;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size: 13px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">tr:hover td {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: #f8fafc;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.highlight {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: #1d4ed8;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.footer {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: #374151;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">@media print {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body { padding: 0; background: white; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.card, table, .hero { box-shadow: none; }</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="container" id="documentRoot"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="hero"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h1 data-editable="true"&gt;企业卡业务试算&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;面向日本市场的企业卡发卡、跨境收单、预付卡以及退税业务的三年财务试算模型。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;&lt;strong&gt;业务推进计划：&lt;/strong&gt;&lt;br&gt;2026年：优先开发与上线「跨境广告投流卡」业务。&lt;br&gt;2027年：上线企业采购卡、留学生/外劳卡、退税卡业务。&lt;br&gt;2028年：进一步扩展礼品卡与预付卡业务。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="section-block"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title" data-editable="true"&gt;业务模式说明&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="grid"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3 data-editable="true"&gt;企业采购卡&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;给在日本出店和经营的企业发卡，让企业可以使用在日本的收入直接向中国供应商采购。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;主要收入来源包括：&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;- IRF（Interchange Revenue Fee）&lt;br&gt;- 跨境外汇手续费&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3 data-editable="true"&gt;跨境广告投流卡&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;用于给在日本EC出店的企业支付日本平台使用费、广告费、投流费。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;适用于Amazon、Rakuten、Google、Meta、TikTok等平台相关支出。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;主要收入来源包括：&lt;br&gt;- IRF（Interchange Revenue Fee）&lt;br&gt;- 充值手续费&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3 data-editable="true"&gt;留学生 / 外劳卡&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;针对日本留学生、技能实习生及外劳人群提供工资卡、生活支付卡以及跨境汇款服务。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;收入来源包括：学费、公寓费、通讯费、日常消费等场景中的卡消费收入。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="section-block"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title" data-editable="true"&gt;收入试算&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="table-wrap"&gt;&lt;table class="revenue-table"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;业务类型&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;目标客户&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;核心用途&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;TAM&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;SAM&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;获客来源&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;2027 SOM&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;2028 SOM&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;2029 SOM&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;活跃客户数&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;单客户年GMV&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;2027 GMV&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;2028 GMV&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;2029 GMV&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;收入来源&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;收入率&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;直接成本率&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;毛利率&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;&lt;strong&gt;企业采购卡&lt;/strong&gt;&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;日本华人贸易商 / EC卖家 / 中国采购企业&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;使用日本营业收入&lt;br&gt;向中国供应商采购&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;1100万亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;5000亿~2万亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;合作渠道导流&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;固定导流&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;固定导流&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;固定导流&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约30~50社&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约1.1亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约95亿日元（按5000万人民币/月测算）&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约190亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约285亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;IRF + 外汇手续费&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;2.50%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;0.30%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td class="highlight" data-editable="true"&gt;2.20%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;&lt;strong&gt;跨境广告投流卡&lt;/strong&gt;&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;日本跨境EC卖家&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;广告费 / 平台费&lt;br&gt;/ 投流&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;1.5~2万亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;2000~3000亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;EC服务商合作&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;固定导流&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;固定导流&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;固定导流&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;EC服务商合作&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;每天30万USD广告投流&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约160亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约320亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约480亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;IRF + 充值手续费&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;1.50%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;0.30%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td class="highlight" data-editable="true"&gt;1.20%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;&lt;strong&gt;退税卡&lt;/strong&gt;&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;访日游客 / 退税运营商&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;退税返还&lt;br&gt;与消费&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;7000~8000亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;1000~2000亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;退税运营合作&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;1%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;3%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;5%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约20万用户&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约5万日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;10亿日元（约USD 670万）&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;30亿日元（约USD 2,000万）&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;50亿日元（约USD 3,400万）&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;IRF + 运营手续费&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;0.80%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;0.25%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td class="highlight" data-editable="true"&gt;0.55%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;&lt;strong&gt;留学生 / 外劳卡&lt;/strong&gt;&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;留学生 / 技能实习生 / 外劳&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;学费 / 房租&lt;br&gt;/ 日常消费&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;1.5万亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;3000~5000亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;学校 / 人材公司&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;1%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;3%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;5%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约5万用户&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约30万日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;30亿日元（约USD 2,000万）&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;90亿日元（约USD 6,000万）&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;150亿日元（约USD 1.01亿）&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;消费IRF&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;1.20%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;0.35%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td class="highlight" data-editable="true"&gt;0.85%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;&lt;strong&gt;礼品卡 / 预付卡&lt;/strong&gt;&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;零售 / 企业福利 / IP联名&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;预付消费&lt;br&gt;场景&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;4~5万亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;3000~5000亿日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;零售渠道合作&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;-&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;3%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;5%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约30万用户&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;约5万日元&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;-&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;90亿日元（约USD 6,000万）&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;150亿日元（约USD 1.01亿）&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;IRF + 发卡手续费&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;1.20%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td data-editable="true"&gt;0.40%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;td class="highlight" data-editable="true"&gt;0.80%&lt;/td&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/table&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="section-block"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title" data-editable="true"&gt;直接成本说明&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="table-wrap"&gt;&lt;table&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;th&gt;成本项目&lt;/th&gt;&lt;th&gt;说明&lt;/th&gt;&lt;th&gt;估算方式&lt;/th&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;卡组织费用&lt;/td&gt;&lt;td data-editable="true"&gt;Visa / Mastercard Network Fee&lt;/td&gt;&lt;td data-editable="true"&gt;按GMV比例计提&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;Processor费用&lt;/td&gt;&lt;td data-editable="true"&gt;发卡处理、清算、交易处理费用&lt;/td&gt;&lt;td data-editable="true"&gt;按GMV比例计提&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;风控 / 拒付准备金&lt;/td&gt;&lt;td data-editable="true"&gt;Fraud、Chargeback、坏账准备&lt;/td&gt;&lt;td data-editable="true"&gt;按GMV比例计提&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;BIN Sponsor成本&lt;/td&gt;&lt;td data-editable="true"&gt;BIN租赁与Sponsor Bank相关成本&lt;/td&gt;&lt;td data-editable="true"&gt;已部分包含在Processor费用中&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/table&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="section-block"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title" data-editable="true"&gt;成本试算&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="table-wrap"&gt;&lt;table&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;项目&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;2027&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;2028&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;2029&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;th&gt;说明&lt;/th&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;CEO&lt;/td&gt;&lt;td data-editable="true"&gt;840万日元&lt;/td&gt;&lt;td data-editable="true"&gt;840万日元&lt;/td&gt;&lt;td data-editable="true"&gt;840万日元&lt;/td&gt;&lt;td data-editable="true"&gt;日本代表&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;COO / CPO&lt;/td&gt;&lt;td data-editable="true"&gt;840万日元&lt;/td&gt;&lt;td data-editable="true"&gt;840万日元&lt;/td&gt;&lt;td data-editable="true"&gt;840万日元&lt;/td&gt;&lt;td data-editable="true"&gt;产品与运营负责人&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;外部顾问（团队）费用&lt;/td&gt;&lt;td data-editable="true"&gt;2000万日元&lt;/td&gt;&lt;td data-editable="true"&gt;2000万日元&lt;/td&gt;&lt;td data-editable="true"&gt;2000万日元&lt;/td&gt;&lt;td data-editable="true"&gt;外部顾问、战略支持、行业资源协助&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;产品 / 技术团队&lt;/td&gt;&lt;td data-editable="true"&gt;1800万日元（2人）&lt;/td&gt;&lt;td data-editable="true"&gt;4500万日元（5人）&lt;/td&gt;&lt;td data-editable="true"&gt;4500万日元（5人）&lt;/td&gt;&lt;td data-editable="true"&gt;2028增加3名SE&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;运营团队&lt;/td&gt;&lt;td data-editable="true"&gt;1200万日元（2人）&lt;/td&gt;&lt;td data-editable="true"&gt;3000万日元（5人）&lt;/td&gt;&lt;td data-editable="true"&gt;3000万日元（5人）&lt;/td&gt;&lt;td data-editable="true"&gt;2028增加3名运维&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;总务 / 财务 / 人事&lt;/td&gt;&lt;td data-editable="true"&gt;600万日元（1人）&lt;/td&gt;&lt;td data-editable="true"&gt;1800万日元（3人）&lt;/td&gt;&lt;td data-editable="true"&gt;1800万日元（3人）&lt;/td&gt;&lt;td data-editable="true"&gt;2028增加2名后台人员&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;办公室&lt;/td&gt;&lt;td data-editable="true"&gt;600万日元&lt;/td&gt;&lt;td data-editable="true"&gt;960万日元&lt;/td&gt;&lt;td data-editable="true"&gt;960万日元&lt;/td&gt;&lt;td data-editable="true"&gt;团队扩大后办公室升级&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;发卡系统&lt;/td&gt;&lt;td data-editable="true"&gt;1200万日元&lt;/td&gt;&lt;td data-editable="true"&gt;1800万日元&lt;/td&gt;&lt;td data-editable="true"&gt;1800万日元&lt;/td&gt;&lt;td data-editable="true"&gt;更多BIN与系统资源&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;市场营销&lt;/td&gt;&lt;td data-editable="true"&gt;1000万日元&lt;/td&gt;&lt;td data-editable="true"&gt;1800万日元&lt;/td&gt;&lt;td data-editable="true"&gt;1800万日元&lt;/td&gt;&lt;td data-editable="true"&gt;业务扩张后增加市场预算&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;系统开发费用&lt;/td&gt;&lt;td data-editable="true"&gt;2500万日元（2026投入）&lt;/td&gt;&lt;td data-editable="true"&gt;3000万日元&lt;/td&gt;&lt;td data-editable="true"&gt;3000万日元&lt;/td&gt;&lt;td data-editable="true"&gt;AI开发、功能扩展、系统维护&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;外部服务 / 系统使用费&lt;/td&gt;&lt;td data-editable="true"&gt;1000万日元&lt;/td&gt;&lt;td data-editable="true"&gt;2000万日元&lt;/td&gt;&lt;td data-editable="true"&gt;3000万日元&lt;/td&gt;&lt;td data-editable="true"&gt;银行充值、打款、API使用费、外部SaaS等&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;固定运营成本合计&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;1.36亿日元&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;2.25亿日元&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;2.43亿日元&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;2028后团队扩张&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;发卡系统初期费用（一次性）&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;0.25亿日元（约USD 1,690万）&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;-&lt;/td&gt;&lt;td data-editable="true"&gt;-&lt;/td&gt;&lt;td data-editable="true"&gt;2027年初期导入费用&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/table&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="section-block"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title" data-editable="true"&gt;利润试算&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="table-wrap"&gt;&lt;table&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;th&gt;项目&lt;/th&gt;&lt;th&gt;2027&lt;/th&gt;&lt;th&gt;2028&lt;/th&gt;&lt;th&gt;2029&lt;/th&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;营业收入&lt;/td&gt;&lt;td data-editable="true"&gt;约6.2亿日元&lt;/td&gt;&lt;td data-editable="true"&gt;约11.5亿日元&lt;/td&gt;&lt;td data-editable="true"&gt;约16.8亿日元&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;直接成本&lt;/td&gt;&lt;td data-editable="true"&gt;约1.6亿日元&lt;/td&gt;&lt;td data-editable="true"&gt;约3.0亿日元&lt;/td&gt;&lt;td data-editable="true"&gt;约4.2亿日元&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;毛利润&lt;/td&gt;&lt;td data-editable="true"&gt;约4.6亿日元&lt;/td&gt;&lt;td data-editable="true"&gt;约8.5亿日元&lt;/td&gt;&lt;td data-editable="true"&gt;约12.6亿日元&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;运营成本&lt;/td&gt;&lt;td data-editable="true"&gt;1.61亿日元&lt;/td&gt;&lt;td data-editable="true"&gt;2.25亿日元&lt;/td&gt;&lt;td data-editable="true"&gt;2.43亿日元&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;EBITDA&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;约3.0亿日元&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;约6.2亿日元&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;约10.1亿日元&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/table&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="section-block"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title" data-editable="true"&gt;直接成本率构成依据&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="table-wrap"&gt;&lt;table&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;th&gt;成本项目&lt;/th&gt;&lt;th&gt;当前假设&lt;/th&gt;&lt;th&gt;行业常见范围&lt;/th&gt;&lt;th&gt;依据说明&lt;/th&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;卡组织费用（Scheme Fee）&lt;/td&gt;&lt;td data-editable="true"&gt;0.10% ~ 0.18%&lt;/td&gt;&lt;td data-editable="true"&gt;0.08% ~ 0.25%&lt;/td&gt;&lt;td data-editable="true"&gt;参考日本市场Visa / Mastercard Commercial Card、企业支付、跨境收单项目的Network Fee结构。不同MCC、卡种、跨境比例会影响成本。&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;Processor费用&lt;/td&gt;&lt;td data-editable="true"&gt;0.08% ~ 0.15%&lt;/td&gt;&lt;td data-editable="true"&gt;0.05% ~ 0.20%&lt;/td&gt;&lt;td data-editable="true"&gt;参考日本市场Processor、BIN Sponsor、Issuer Processor常见报价。大型交易量通常可进一步下降。&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;风控 / Chargeback准备金&lt;/td&gt;&lt;td data-editable="true"&gt;0.03% ~ 0.08%&lt;/td&gt;&lt;td data-editable="true"&gt;0.02% ~ 0.15%&lt;/td&gt;&lt;td data-editable="true"&gt;参考企业卡、跨境广告投流卡、预付卡业务中的Fraud Loss与Chargeback Reserve经验值。&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;BIN Sponsor相关成本&lt;/td&gt;&lt;td data-editable="true"&gt;部分计入Processor&lt;/td&gt;&lt;td data-editable="true"&gt;固定费 + 交易费&lt;/td&gt;&lt;td data-editable="true"&gt;部分Sponsor Bank会单独收费，也有包含在Processor报价中的情况。当前模型采用保守合并处理。&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;合计直接成本率&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;约0.30%&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;0.20% ~ 0.45%&lt;/strong&gt;&lt;/td&gt;&lt;td data-editable="true"&gt;&lt;strong&gt;采用偏保守中位数估算，适用于初期发卡规模。&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/table&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="section-block"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title" data-editable="true"&gt;费率假设与行业参考说明&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="table-wrap"&gt;&lt;table&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;th&gt;项目&lt;/th&gt;&lt;th&gt;当前假设&lt;/th&gt;&lt;th&gt;行业常见区间&lt;/th&gt;&lt;th&gt;说明&lt;/th&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;企业采购卡收入率&lt;/td&gt;&lt;td data-editable="true"&gt;2.50%&lt;/td&gt;&lt;td data-editable="true"&gt;1.50% ~ 3.00%&lt;/td&gt;&lt;td data-editable="true"&gt;包含企业采购卡MDR收入以及跨境人民币采购场景中的外汇手续费收入。由于目标场景为日本企业向中国采购，因此增加约1.5%的跨境换汇手续费。整体收入结构包括IRF收入以及跨境外汇手续费等。&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;跨境广告投流卡收入率&lt;/td&gt;&lt;td data-editable="true"&gt;1.50%&lt;/td&gt;&lt;td data-editable="true"&gt;1.20% ~ 2.00%&lt;/td&gt;&lt;td data-editable="true"&gt;参考日本跨境广告投流、海外平台支付、EC平台费用支付业务中的MDR结构。由于跨境、高频广告投流及平台费用支付场景，1.5%属于现实可实现区间。&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;留学生 / 外劳卡收入率&lt;/td&gt;&lt;td data-editable="true"&gt;1.20%&lt;/td&gt;&lt;td data-editable="true"&gt;0.80% ~ 1.50%&lt;/td&gt;&lt;td data-editable="true"&gt;参考日本留学生、技能实习生、外劳工资卡、生活支付卡业务中的MDR、FX及ATM相关收入结构。&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;tr&gt;&lt;td data-editable="true"&gt;直接成本率&lt;/td&gt;&lt;td data-editable="true"&gt;0.30%&lt;/td&gt;&lt;td data-editable="true"&gt;0.20% ~ 0.45%&lt;/td&gt;&lt;td data-editable="true"&gt;包含Visa/Mastercard Network Fee、Processor、BIN Sponsor、Fraud Reserve等。实际会因交易结构、地区、MCC、卡种而变化。&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/table&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="section-block"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h2 class="section-title"&gt;补充说明&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="footer"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;说明：&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;当前模型中的收入率与直接成本率，并非来自单一公开数据，而是基于日本支付行业经验、市场公开资料、以及日本发卡/收单业务的常见商业结构进行保守估算。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;- 收入率（Take Rate）主要参考企业卡、Commercial Card、跨境收单、稳定币支付业务中的净分润比例。其中企业采购卡场景额外考虑了中日跨境采购中的外汇手续费收入。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;- 直接成本主要包含卡组织费用（Visa/Mastercard）、Processor费用、BIN Sponsor费用、风控与拒付准备金等。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;- 当前采用的是偏保守的中位数估算，后续可以根据实际合作银行、Processor、卡组织条件进一步调整。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;- 若取得更好的BIN Sponsor条件、自建Processor、或稳定币结算占比提升，整体毛利率有进一步改善空间。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p data-editable="true"&gt;本模型用于投资人沟通、银行合作讨论以及内部经营规划。后续还可以追加稳定币结算、虚拟卡、钱包服务等业务场景。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
